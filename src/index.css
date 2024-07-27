@@ -38,6 +38,7 @@ a:hover {
 
 body {
   min-height: 100vh;
+  background-color: hsl(var(--background));
 }
 
 h1 {
