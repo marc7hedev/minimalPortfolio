@@ -5,6 +5,7 @@ import './App.css'
 import Bio from "./sections/Bio";
 import Skills from "./sections/Skills"
 import Projects from "./sections/Projects"
+import Contact from './sections/Contact';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
 
         <div className="col-span-2">
           <Projects />
+          <Contact />
         </div>
       
       </div>
