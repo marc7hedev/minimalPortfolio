@@ -13,7 +13,7 @@ const Bio = () => {
                     <Linkedin className="text-blue-400 hover:text-blue-600 cursor-pointer"/>
 
                 </a>
-                <a href="https://mx.linkedin.com/" target="_blank" rel="noopener noreferrer" >
+                <a href="mailto:contacto@marco-rangel.tech" target="_blank" rel="noopener noreferrer" >
                     <AtSign className="text-pink-400 hover:text-pink-600 cursor-pointer"/>
                 </a>
                 <a href="https://github.com/marc7hedev" target="_blank" rel="noopener noreferrer" >
