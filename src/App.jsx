@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Bio from "./sections/Bio";
 import Skills from "./sections/Skills"
+import Projects from "./sections/Projects"
 
 function App() {
 
@@ -19,7 +20,9 @@ function App() {
 
         </div>
 
-        <div className="border border-background col-span-2">column 2</div>
+        <div className="col-span-2">
+          <Projects />
+        </div>
       
       </div>
     </>
