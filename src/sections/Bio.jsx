@@ -7,7 +7,8 @@ const Bio = () => {
 
             <img 
                 src="/profile.png" 
-                alt="Foto de perfil" 
+                alt="Foto de perfil"
+                className="h-32 w-32 rounded-full"
             />        
             <h1 className="text-lg md:text-2xl font-bold mt-3">Marco Rangel</h1>
             <p className="text-secondary-foreground py-2">Desarrollador Web especializado en Backend</p>

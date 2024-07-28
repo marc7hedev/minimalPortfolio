@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Bio from "./sections/Bio";
+import Skills from "./sections/Skills"
 
 function App() {
 
@@ -14,6 +15,8 @@ function App() {
 
         <div className="">
           <Bio/>
+          <Skills/>
+
         </div>
 
         <div className="border border-background col-span-2">column 2</div>
