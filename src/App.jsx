@@ -12,7 +12,7 @@ function App() {
 
   return (
     <>
-      <div className="container-md mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 p-3 md:p-7">
+      <div className="container-md mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 p-3 md:p-7 font-mono font-medium tracking-tight">
 
         {/* <div className="border border-border text-[#243c5a]">column 1</div> */}
 
