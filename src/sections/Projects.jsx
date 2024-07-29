@@ -37,7 +37,7 @@ const Projects = () => {
     return (
         <>
             <h1 className="text-4xl text-left font-bold mb-2">Proyectos Recientes</h1>
-            <ul className="bg-white text-left rounded-xl p-4">
+            <ul className="bg-white text-left rounded-xl p-4 shadow-xl hover:shadow-2xl">
                 {projects.map((project, i) =>  (
                     <li key={i}>
                         <ProjectCard 

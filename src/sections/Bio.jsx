@@ -3,7 +3,7 @@ import { Linkedin, AtSign, GitBranch } from "lucide-react";
 const Bio = () => {
     
     return (
-        <section className="bg-white text-center md:text-left rounded-xl p-2 md:p-5 shadow-md">
+        <section className="bg-white text-center md:text-left rounded-xl p-2 md:p-5 shadow-xl hover:shadow-2xl">
 
             <img 
                 src="/profile.png" 

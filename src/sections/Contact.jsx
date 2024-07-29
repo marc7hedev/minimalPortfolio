@@ -42,7 +42,7 @@ const Contact = () => {
         <section>
 
             <h1 className="text-4xl text-left font-bold my-6">Contáctame</h1>
-            <div className="bg-white text-left rounded-xl p-8">
+            <div className="bg-white text-left rounded-xl p-8 shadow-xl hover:shadow-2xl">
                 <p>¿Estás interesado en trabajar juntos? Contáctame en{""} 
                 <a href="mailto:contacto@marco-rangel.tech"> contacto@marco-rangel.tech</a>
                 </p>
