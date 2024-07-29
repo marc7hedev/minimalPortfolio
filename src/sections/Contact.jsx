@@ -18,7 +18,6 @@ const Contact = () => {
 
     const onHandleSubmit = async (e) => {
         e.preventDefault();
-        console.log(formDetails);
         const formData = new FormData();
         for (const name in formDetails){
             formData.append(name, formDetails[name]);
@@ -32,7 +31,6 @@ const Contact = () => {
             });
         const result = await response.json();
         setSubmitted(true);
-        console.log(result);
         } catch (e) {
             console.log(e);
         }
