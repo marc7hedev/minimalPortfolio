@@ -9,17 +9,36 @@ const Contact = () => {
     }
 
     const [formDetails, setFormDetails] = useState(initialState);
+    const [submitted, setSubmitted] = useState(false);
 
     const onValueChange = (fieldName, value) => {
         const updatedFormDetails = { ...formDetails, [fieldName]: value};
         setFormDetails(updatedFormDetails);
     }
 
-    const onHandleSubmit = (e) => {
+    const onHandleSubmit = async (e) => {
         e.preventDefault();
         console.log(formDetails);
-        setFormDetails(initialState)
-    }
+        const formData = new FormData();
+        for (const name in formDetails){
+            formData.append(name, formDetails[name]);
+            
+        }
+        try{
+            const response = await fetch("https://devform.vercel.app/api/submit/40", {
+                method: "POST",
+                body: formData,
+                contentType: "application/json"
+            });
+        const result = await response.json();
+        setSubmitted(true);
+        console.log(result);
+        } catch (e) {
+            console.log(e);
+        }
+        setFormDetails(initialState);
+    };
+
 
     return (
         <section>
@@ -53,6 +72,7 @@ const Contact = () => {
                         value={formDetails.message}
                         onChange={(e) => onValueChange("message", e.target.value)}
                         />
+                    {submitted ? <p className="text-green-600">Tu mensaje ha sido enviado!</p> : null}
                     <button 
                         type="submit"
                         className="bg-primary text-white"
